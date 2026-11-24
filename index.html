@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Passport Log — Count your days in every country</title>
-<meta name="description" content="An iPhone app that records which country you are in and counts your days, for tax residency, citizenship applications and travel records.">
+<meta name="description" content="A free iPhone app that records which country you are in and counts your days, for tax residency, citizenship applications and travel records.">
 <style>
   :root { color-scheme: light dark; }
   body { font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
@@ -12,7 +12,15 @@
   h1 { font-size: 2rem; margin-bottom: 0.25rem; }
   .lede { font-size: 1.15rem; color: #6b7280; margin-top: 0; }
   h2 { font-size: 1.15rem; margin-top: 2.25rem; }
+  h3 { font-size: 1rem; margin-bottom: 0.2rem; }
   ul { padding-left: 1.2rem; }
+  li { margin-bottom: 0.35rem; }
+  .cta { display: inline-block; margin: 1.25rem 0 0.25rem; padding: 0.7rem 1.4rem;
+         background: #0f766e; color: #fff; text-decoration: none; border-radius: 0.5rem;
+         font-weight: 600; }
+  .cta:hover { background: #115e56; }
+  .requires { color: #6b7280; font-size: 0.9rem; margin-top: 0.5rem; }
+  .note { color: #6b7280; font-size: 0.95rem; }
   footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #9ca3af55; color: #6b7280; font-size: 0.9rem; }
   a { color: #0f766e; }
 </style>
@@ -26,25 +34,68 @@
 record of the countries you have been in — for watching tax residency thresholds, building a
 residency or citizenship history, or simply keeping track of where you have been.</p>
 
+<p><a class="cta" href="https://apps.apple.com/app/id6815381234">Download on the App Store</a></p>
+<p class="requires">Free. Requires iPhone with iOS 18 or later.</p>
+
 <h2>How it works</h2>
 <ul>
   <li>Records your country in the background, using a low-power service that wakes the app only when you move a significant distance.</li>
-  <li>Works out the country on the phone itself, from a map of borders built into the app, so it works with no signal and no roaming data.</li>
-  <li>Counts any part of a day, in the local time zone of wherever you were.</li>
-  <li>Fills in quiet days, and asks you about days where the country changed while it wasn't looking.</li>
-  <li>Warns you before you reach a limit you set, such as 183 days.</li>
-  <li>Exports your history as a CSV file for your accountant or your own records.</li>
+  <li>Works out the country on the phone itself, from a map of 249 countries and territories built into the app, so it works with no signal and no roaming data.</li>
+  <li>Counts any part of a day, in the local time zone of wherever you were. Cross a border and the day counts for both countries.</li>
+  <li>Fills in quiet days from the days around them, and asks you about days where the country changed while it wasn't looking.</li>
+  <li>Knows the difference between visiting a country and flying over it: only the country you took off from and the one you landed in count, while a stop between two flights still counts for where you stopped.</li>
+  <li>Lets you add past trips and correct any day by hand.</li>
 </ul>
+
+<h2>Day limits</h2>
+<p>Set a limit for a country — 183 days, say — counted over a calendar year or the last twelve
+months. Passport Log shows how many days are left and the date you would reach the limit if you
+stayed put, and warns you thirty and ten days before, and on the day itself.</p>
+
+<h2>Export</h2>
+<p>Export your history as a CSV file, one row per day and country, marked according to whether the
+day was recorded, filled in or added by hand. Useful for an accountant, or for your own records.</p>
 
 <h2>Your data stays yours</h2>
 <p>There is no server and no account. Everything stays on your iPhone and, if you want, in your own
-private iCloud. Nothing is sent to the developer, and there is no advertising or tracking of any
-kind.</p>
+private iCloud, which the developer cannot read. Nothing is sent to the developer, there is no
+advertising or tracking of any kind, and you can delete everything in one go.</p>
+
+<h3>Why iCloud?</h3>
+<p>Because a record built up over years is not something you can reconstruct from memory. Syncing
+keeps your days on this iPhone <em>and</em> in your own private iCloud, so they survive a lost,
+broken or replaced phone and come back when you restore it. Without it, your history lives on one
+device and goes with it.</p>
+<p>It is Apple's iCloud under your own account — not a service the developer runs, and not somewhere
+anyone else can look. It is a switch in Settings, so you can turn it off and keep everything on the
+one device instead.</p>
 
 <h2>Free</h2>
 <p>Passport Log is free, with no ads and nothing to buy.</p>
 
+<h2>What's next</h2>
+<p class="note">Ideas for future versions, in no particular order and with no dates attached. If one
+of these matters to you, say so — that is the best way to move it up the list.</p>
+<ul>
+  <li><strong>A choice of counting rules.</strong> Today every country counts any part of a day. Some count only days you were present at midnight, others only days with an overnight stay. Picking the rule that matches your situation is the most requested change.</li>
+  <li><strong>Schengen 90/180.</strong> The Schengen area counted as one zone over a rolling 180 days.</li>
+  <li><strong>States and provinces.</strong> US states, Canadian provinces and the like, for state-level tax rules.</li>
+  <li><strong>Special territories.</strong> Places with their own tax rules inside a country, such as the Canary Islands or Madeira.</li>
+  <li><strong>A PDF report.</strong> A formatted day count for an accountant or an authority.</li>
+  <li><strong>Your travel, in numbers.</strong> What the record adds up to: days per country each year, your longest unbroken stay, this year against last. Worked out on your phone from what is already there — these are insights for you, not information about you going anywhere.</li>
+  <li><strong>A passport of stamps.</strong> A page you can leaf through with a stamp for every country you have been in, its first and last visit and the days you spent there — and a spread you can save or share. The screen the app's name has been promising.</li>
+  <li><strong>Importing flight history</strong>, so past trips do not have to be typed in by hand.</li>
+  <li><strong>More notifications.</strong> Today the app only speaks up about a day limit. It could also tell you when you enter a new country, when a day needs reviewing, or how your year is going. Scheduled on the phone like the warnings already are, so nothing is sent from a server.</li>
+  <li><strong>More languages.</strong> Portuguese first.</li>
+  <li><strong>An Apple Watch app</strong>, for the current country and limit status at a glance.</li>
+  <li><strong>An Android version.</strong> Under consideration, not started.</li>
+</ul>
+<p class="note">Because Passport Log keeps every raw location reading rather than only the daily
+totals, most of these can be applied to history you have already recorded, rather than only to
+days from then on.</p>
+
 <footer>
+<a href="https://apps.apple.com/app/id6815381234">App Store</a> ·
 <a href="privacy.html">Privacy Policy</a> · <a href="support.html">Support</a> ·
 <a href="mailto:antonio@amados.pt">antonio@amados.pt</a><br>
 Day counts are a good-faith record, not legal proof or tax advice.
